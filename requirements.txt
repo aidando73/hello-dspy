@@ -2,3 +2,4 @@ openai
 dspy
 python-dotenv
 mlflow>=2.20
+faiss-cpu
