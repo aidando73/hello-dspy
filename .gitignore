@@ -2,3 +2,4 @@ env/
 .env
 mlruns/
 mlartifacts/
+ragqa_arena_tech_examples.jsonl
