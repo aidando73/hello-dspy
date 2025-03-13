@@ -1,0 +1,30 @@
+{
+  "traces": [],
+  "train": [],
+  "demos": [],
+  "signature": {
+    "instructions": "Analyze the given historical event description, which includes specific dates, names of individuals, and locations, and categorize it into a relevant category such as \"Politics and Governance\", \"Wars and Conflicts\", or other applicable categories. Provide a confidence score ranging from 0.5 to 2.0, indicating the certainty of the categorization. Ensure the categorization is based on the context and content of the event description, taking into account the involvement of notable figures, countries, or global issues. Utilize natural language processing techniques to identify key phrases and entities within the event description to inform the categorization decision.",
+    "fields": [
+      {
+        "prefix": "Event:",
+        "description": "${event}"
+      },
+      {
+        "prefix": "Category:",
+        "description": "${category}"
+      },
+      {
+        "prefix": "Confidence:",
+        "description": "${confidence}"
+      }
+    ]
+  },
+  "lm": null,
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.10",
+      "dspy": "2.6.11",
+      "cloudpickle": "3.1"
+    }
+  }
+}
