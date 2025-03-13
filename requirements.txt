@@ -3,4 +3,6 @@ dspy
 python-dotenv
 mlflow>=2.20
 faiss-cpu
-git+https://github.com/hendrycks/math.git
+# git+https://github.com/hendrycks/math.git
+dspy-ai
+datasets
