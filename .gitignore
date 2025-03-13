@@ -4,3 +4,5 @@ mlruns/
 mlartifacts/
 ragqa_arena_tech_examples.jsonl
 ragqa_arena_tech_corpus.jsonl
+wiki.abstracts.2017.tar.gz
+wiki.abstracts.2017.jsonl
