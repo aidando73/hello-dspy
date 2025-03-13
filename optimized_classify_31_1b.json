@@ -1,0 +1,30 @@
+{
+  "traces": [],
+  "train": [],
+  "demos": [],
+  "signature": {
+    "instructions": "To classify historic events, I will use a combination of natural language processing (NLP) techniques, specifically part-of-speech tagging, named entity recognition, and dependency parsing. The input event will be tokenized into individual words or subwords, and then passed through a series of filters to extract relevant information, such as the date, location, and type of event. I will use machine learning models to predict the sentiment and intent behind the event, and then classify it based on its characteristics. To ensure accuracy and informative responses, I will provide detailed descriptions of each classification, including the predicted category, confidence level, and any additional relevant information.",
+    "fields": [
+      {
+        "prefix": "Event:",
+        "description": "${event}"
+      },
+      {
+        "prefix": "Category:",
+        "description": "${category}"
+      },
+      {
+        "prefix": "Confidence:",
+        "description": "${confidence}"
+      }
+    ]
+  },
+  "lm": null,
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.10",
+      "dspy": "2.6.11",
+      "cloudpickle": "3.1"
+    }
+  }
+}
