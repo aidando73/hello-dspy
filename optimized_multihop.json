@@ -1,0 +1,181 @@
+{
+  "generate_query.predict": {
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "augmented": true,
+        "claim": "The European species named after David Bowman (botanist) and Carlina are both flowering plants.",
+        "notes": [
+          "Dieffenbachia bowmanii is named after David Bowman and is a flowering plant.",
+          "Carlina is a genus of flowering plants native to Europe.",
+          "Dieffenbachia bowmanii is named after David Bowman and is a flowering plant.",
+          "Carlina is a genus of flowering plants native to Europe.",
+          "Dieffenbachia bowmanii is named after David Bowman and is a flowering plant.",
+          "Carlina is a genus of flowering plants native to Europe.",
+          "Dieffenbachia bowmanii is named after David Bowman and is a flowering plant.",
+          "Carlina is a genus of flowering plants native to Europe."
+        ],
+        "reasoning": "The claim states that both the European species named after David Bowman and Carlina are flowering plants. From the notes, we have information that Dieffenbachia bowmanii is named after David Bowman and is a flowering plant. Additionally, Carlina is confirmed to be a genus of flowering plants native to Europe. Therefore, both parts of the claim are supported by the notes.",
+        "query": "What is the relationship between Dieffenbachia bowmanii and Carlina in terms of their classification as flowering plants?"
+      },
+      {
+        "claim": "This character as featured in the comic book, Hellblazer Special: Bad Blood. He is  is the fictional antihero from comic books published by DC Comics, who sometimes acts as a cab driver, and was created by Alan Moore, Steve Bissette, and John Totleben.",
+        "titles": [
+          "John Constantine",
+          "Hellblazer Special: Bad Blood",
+          "Chas Chandler (comics)"
+        ]
+      },
+      {
+        "claim": "David Nixon and another man are both horror film directors. The other director directed the film \"Rhinestone\".",
+        "titles": [
+          "David Nixon (director)",
+          "Phil Alden Robinson",
+          "Rhinestone (film)"
+        ]
+      },
+      {
+        "claim": "The father of Zak Ov\u00e9 and A. Edward Sutherland are not both photographers.",
+        "titles": [
+          "Zak Ov\u00e9",
+          "Horace Ov\u00e9",
+          "A. Edward Sutherland"
+        ]
+      }
+    ],
+    "signature": {
+      "instructions": "Based on the provided `claim` and existing `notes`, generate a logical reasoning process that explains the relationship between the claim and the notes. Then, produce a specific `query` that can be used to search for additional information to further verify or refute the claim.",
+      "fields": [
+        {
+          "prefix": "Claim:",
+          "description": "${claim}"
+        },
+        {
+          "prefix": "Notes:",
+          "description": "${notes}"
+        },
+        {
+          "prefix": "Reasoning: Let's think step by step in order to",
+          "description": "${reasoning}"
+        },
+        {
+          "prefix": "Query:",
+          "description": "${query}"
+        }
+      ]
+    },
+    "lm": null
+  },
+  "append_notes.predict": {
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "augmented": true,
+        "claim": "The director of action movie Batman: Mask of the Phantasm, produced Avengers Assemble that premiered on Disney XD on May 26, 2013.",
+        "notes": [
+          "Eric Radomski and Bruce Timm directed Batman: Mask of the Phantasm.",
+          "Avengers Assemble premiered on Disney XD on May 26, 2013.",
+          "Avengers Assemble was produced by Marvel Animation.",
+          "Eric Radomski and Bruce Timm directed Batman: Mask of the Phantasm.",
+          "Avengers Assemble premiered on Disney XD on May 26, 2013.",
+          "Avengers Assemble was produced by Marvel Animation.",
+          "Eric Radomski and Bruce Timm directed Batman: Mask of the Phantasm.",
+          "Avengers Assemble premiered on Disney XD on May 26, 2013.",
+          "Avengers Assemble was produced by Marvel Animation.",
+          "Eric Radomski is a producer associated with Avengers Assemble.",
+          "Eric Radomski and Bruce Timm directed Batman: Mask of the Phantasm.",
+          "Avengers Assemble premiered on Disney XD on May 26, 2013.",
+          "Avengers Assemble was produced by Marvel Animation.",
+          "Eric Radomski is a producer associated with Avengers Assemble."
+        ],
+        "context": {
+          "Eric Radomski | Eric Radomski is a producer most closely linked with Warner Bros.  Animation.  He is perhaps best known as co-creator and co-producer of \"\".  He has also acted as producer for \"Freakazoid! \", \"Xiaolin Showdown\", \"Shaggy & Scooby-Doo Get a Clue! \", \"Ultimate Spider-Man\", \"Avengers Assemble\", \"Hulk and the Agents of S.M.A.S.H.\" and \"Guardians of the Galaxy\".": 19.127614974975586,
+          "Batman: Mask of the Phantasm | Batman: Mask of the Phantasm (also known as Batman: The Animated Movie) is a 1993 American animated neo-noir superhero mystery film featuring the DC Comics character Batman.  Directed by Eric Radomski and Bruce Timm, it is a cinematic continuation of \"\".": 18.941490173339844,
+          "Batman: The Animated Series | Batman: The Animated Series is an American animated television series based on the DC Comics superhero Batman.  It was developed by Bruce Timm and Eric Radomski.  Produced by Warner Bros.  Animation, it originally aired on Fox Kids from September 5, 1992, to September 15, 1995, with a total of 85 episodes.  For the final fifteen episodes, the series was given the on-screen title The Adventures of Batman & Robin, which was also used for reruns of earlier episodes.  The series eventually spawned a continuation show, \"The New Batman Adventures\".": 16.094226837158203,
+          "Bruce Timm | Bruce Walter Timm (born February 5, 1961) is an American artist, character designer, animator, writer, producer, and actor.  He is best known for his contributions building the modern DC Comics animated franchise, the DC animated universe.": 11.690523147583008,
+          "Smart, connected products | Smart, connected products are products, assets and other things embedded with processors, sensors, software and connectivity that allow data to be exchanged between the product and its environment, manufacturer, operator\/user, and other products and systems.  Connectivity also enables some capabilities of the product to exist outside the physical device, in what is known as the product cloud.  The data collected from these products can be then analyzed to inform decision-making, enable operational efficiencies and continuously improve the performance of the product.": 11.263616561889648,
+          "Avengers Assemble | \"Avengers assemble!\"  is the rallying cry for the Marvel Comics superhero team the Avengers.": 10.323777198791504,
+          "Avengers Assemble (comics) | Avengers Assemble was an ongoing comic book series featuring the Marvel Comics superhero team the Avengers.  Its initial release coincided with the release of the 2012 film \"The Avengers\".": 10.2802152633667,
+          "Product Miniature Company | Product Miniature Company, or known by the acronym PMC, was a company that manufactured pre-assembled plastic promotional models cars, banks and toys in Milwaukee, Wisconsin.  It was started by brothers William Edward \"Ed\" and Paul Ford in 1946.  Car model production, the company mainstay, ended about 1965.  In 1958 or 1959 the company moved to Pewaukee, west of Milwaukee, and remains there to this day, now producing other plastic promotional products, but not vehicles (Timm 2010 Product Miniature page).": 10.202466011047363,
+          "Production of Avengers: Infinity War and the untitled Avengers sequel | Production of Avengers: Infinity War and the untitled Avengers sequel": 10.155390739440918,
+          "Avengers Assemble (TV series) | Avengers Assemble is an American animated television series based on the fictional Marvel Comics superhero team known as the Avengers.  Designed to capitalize on the success of the 2012 film, \"The Avengers\", the series premiered on Disney XD on May 26, 2013, as the successor to \"\".": 10.022963523864746
+        },
+        "reasoning": "The claim states that the director of \"Batman: Mask of the Phantasm\" also produced \"Avengers Assemble.\" According to the notes, \"Batman: Mask of the Phantasm\" was directed by Eric Radomski and Bruce Timm. The context confirms that Eric Radomski is associated with \"Avengers Assemble\" as a producer. Therefore, the claim is true because Eric Radomski, one of the directors of \"Batman: Mask of the Phantasm,\" was involved in the production of \"Avengers Assemble.\"",
+        "new_notes": [
+          "Eric Radomski and Bruce Timm directed Batman: Mask of the Phantasm.",
+          "Avengers Assemble premiered on Disney XD on May 26, 2013.",
+          "Avengers Assemble was produced by Marvel Animation.",
+          "Eric Radomski is a producer associated with Avengers Assemble."
+        ],
+        "titles": [
+          "Batman: Mask of the Phantasm",
+          "Avengers Assemble (TV series)",
+          "Eric Radomski"
+        ]
+      },
+      {
+        "claim": "The director of From the Manger to the Cross also acted in it. The director Denis Villeneuve has won more Those Who Make Revolution Halfway than this director.",
+        "titles": [
+          "From the Manger to the Cross",
+          "Sidney Olcott",
+          "Denis Villeneuve"
+        ]
+      },
+      {
+        "claim": "1990 Film that Khiladiyon Ka Khiladi is loosely based on stars this actor who is best known for martial arts action films.",
+        "titles": [
+          "Lionheart (1990 film)",
+          "Jean-Claude Van Damme",
+          "Khiladiyon Ka Khiladi"
+        ]
+      },
+      {
+        "claim": "An Greek actor who was a CIA operative in Chuck Versus the A-Team was born in 1974. The actor plays a character in commercials for Old Spice.",
+        "titles": [
+          "Isaiah Mustafa",
+          "Chuck Versus the A-Team",
+          "Make a Smellmitment"
+        ]
+      }
+    ],
+    "signature": {
+      "instructions": "Using the provided `claim`, `notes`, and `context`, synthesize the information to generate `new_notes` and `titles`. The `new_notes` should include refined and relevant insights that support or refute the claim, while the `titles` should list key entities or sources that are pertinent to the reasoning process. Ensure that the reasoning is clear and logical, guiding the derivation of `new_notes` and `titles` in a manner that effectively aids in the verification of the claim.",
+      "fields": [
+        {
+          "prefix": "Claim:",
+          "description": "${claim}"
+        },
+        {
+          "prefix": "Notes:",
+          "description": "${notes}"
+        },
+        {
+          "prefix": "Context:",
+          "description": "${context}"
+        },
+        {
+          "prefix": "Reasoning: Let's think step by step in order to",
+          "description": "${reasoning}"
+        },
+        {
+          "prefix": "New Notes:",
+          "description": "${new_notes}"
+        },
+        {
+          "prefix": "Titles:",
+          "description": "${titles}"
+        }
+      ]
+    },
+    "lm": null
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.10",
+      "dspy": "2.6.11",
+      "cloudpickle": "3.1"
+    }
+  }
+}
